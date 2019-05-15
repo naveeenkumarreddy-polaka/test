@@ -90,7 +90,7 @@
 </distributionManagement>
 	
 	
-  <build>
+ <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -100,12 +100,7 @@
           <source>1.7</source>
           <target>1.7</target>
         </configuration>
-      </plugin> 
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.6.0.1398</version>
-      </plugin>
+      </plugin>     
     </plugins>
   </build>
 
@@ -116,12 +111,19 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <build>
-        
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.jacoco</groupId>
+              <artifactId>jacoco-maven-plugin</artifactId>
+              <version>0.7.8</version>
+            </plugin>
+          </plugins>
+        </pluginManagement>
         <plugins>
           <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.6.0.1398</version>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
             <configuration>
               <append>true</append>
             </configuration>
