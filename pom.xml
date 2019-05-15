@@ -116,15 +116,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.jacoco</groupId>
-              <artifactId>jacoco-maven-plugin</artifactId>
-              <version>0.7.8</version>
-            </plugin>
-          </plugins>
-        </pluginManagement>
+        
         <plugins>
           <plugin>
             <groupId>org.jacoco</groupId>
