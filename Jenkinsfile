@@ -1,7 +1,7 @@
 #!groovy
 
 pipeline{
-	node any
+	agent any
 	stages{
 		stage('git checkout'){
 			steps{
