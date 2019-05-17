@@ -16,12 +16,12 @@ pipeline{
 		
 		stage('Test') {
            		steps {
-               		  	unstash 'app'
-                		bat 'make check' 
+               		  	unstash "app"
+                		bat "make check" 
             			} 
 			post {
                 		always {
-                   		 junit '**/target/*.xml'
+                   		 junit "**/target/*.xml"
                 		}
            		 } 
        		 }
