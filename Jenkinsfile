@@ -18,10 +18,10 @@ pipeline{
 				bat "mvn clean install"
 			}
 		}
-		stage('Deploy'){
+		/*stage('Deploy'){
 			steps{
 				bat 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\test\\target\\*.war" C:\\Users\\qw693\\Documents\\Devops_tools\\apache-tomcat-8.5.40\\webapps'
 			}
-		}
+		}*/
 	}
 }
