@@ -16,7 +16,7 @@ pipeline{
 		
 		
 
-		stage('Artifactory'){
+		stage('Build & Artifactory Storage'){
 			steps{
 				bat "mvn clean deploy"
 			}
