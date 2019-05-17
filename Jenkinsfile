@@ -16,12 +16,12 @@ pipeline{
 		
 		
 
-		stage('Deploy'){
+		stage('Artifactory'){
 			steps{
 				bat "mvn clean deploy"
 			}
 		}
-		stage('Deploy'){
+		stage('Deploy to Tomcat'){
 			steps{
 				bat 'copy "C:\\Program Files (x86)\\Jenkins\\workspace\\test\\target\\*.war" C:\\Users\\qw693\\Documents\\Devops_tools\\apache-tomcat-8.5.40\\webapps'
 			}
