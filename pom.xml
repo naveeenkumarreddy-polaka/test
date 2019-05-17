@@ -76,26 +76,16 @@
 		</dependency>
   </dependencies>
 
-	<distributionManagement>
-    <!--<repository>
+<distributionManagement>
+    <repository>
         <id>Jfrog</id>
         <name>L5-A175185-releases</name>
-        <url>http://localhost:8081/artifactory/Maven_repo</url>
+        <url>http://192.168.205.124:8081/artifactory/test_maven</url>
     </repository>
     <snapshotRepository>
         <id>Jfrog</id>
         <name>L5-A175185-snapshots</name>
-        <url>http://localhost:8081/artifactory/Maven_repo</url>
-    </snapshotRepository> -->
-<repository>
-        <id>Jfrog</id>
-        <name>L5-A175185-releases</name>
-        <url>http:http://localhost:8081/artifactory/test_maven</url>
-    </repository>
-    <snapshotRepository>
-        <id>Jfrog</id>
-        <name>L5-A175185-snapshots</name>
-        <url>http://localhost:8081/artifactory/test_maven</url>
+        <url>http://192.168.205.124:8081/artifactory/test_maven</url>
     </snapshotRepository>		
 </distributionManagement>
 	
