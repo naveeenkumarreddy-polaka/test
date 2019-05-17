@@ -13,6 +13,15 @@ pipeline{
 				bat "mvn sonar:sonar"
 			}
 		}
+		
+		stage('Test') {
+                   steps {
+               		 junit '**/target/*.xml' 
+            		}
+       		 }
+     
+ 
+
 		stage('Deploy'){
 			steps{
 				bat "mvn clean deploy"
