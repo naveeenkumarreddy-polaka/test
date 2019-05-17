@@ -15,8 +15,7 @@ pipeline{
 		}
 		
 		stage('Test') {
-            
-           		 steps {
+           		steps {
                		  	unstash 'app'
                 		bat 'make check' 
             			} 
