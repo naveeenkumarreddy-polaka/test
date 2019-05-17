@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage('Sonar Scan'){
 			steps{
-				bat "mvn sonar:sonar install"
+				bat "mvn sonar:sonar"
 			}
 		}
 		
