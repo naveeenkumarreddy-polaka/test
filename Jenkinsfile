@@ -10,7 +10,7 @@ pipeline{
 		}
 		stage('Build'){
 			steps{
-				bat "mvn compile"
+				bat "mvn -Dskiptests compile"
 			}
 		}
 		stage('Test'){
