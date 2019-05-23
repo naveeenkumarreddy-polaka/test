@@ -25,7 +25,7 @@ pipeline{
 		}
 		stage('Build & Artifactory Storage'){
 			steps{
-				bat "mvn clean deploy"
+				bat "mvn clean deploy -Dv=${BUILD_NUMBER}"
 			}
 		}
 		stage('Deploy to Tomcat'){
