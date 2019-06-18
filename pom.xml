@@ -6,7 +6,7 @@
   <groupId>com.mt</groupId>
   <artifactId>maven-web-project</artifactId>
   <packaging>war</packaging>
-  <version>2.3.${v}-Snapshots</version>
+  <version>Snapshots-2.3</version>
   <name>Maven Web Project</name>
   <description>Maven Web Project for Java Project</description>
 
@@ -79,8 +79,8 @@
 <distributionManagement>
     <repository>
         <id>Jfrog</id>
-        <name>L5-A175185-releases</name>
-        <url>http://192.168.205.124:8081/artifactory/Maven_repo</url>
+        <name>HYDPCM456350D-releases</name>
+        <url>http://192.168.205.107:8081/artifactory/maven_test</url>
     </repository>
     <snapshotRepository>
         <id>Jfrog</id>
