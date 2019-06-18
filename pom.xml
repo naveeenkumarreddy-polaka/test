@@ -9,11 +9,11 @@
 	<packaging>war</packaging>  -->
 <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mt</groupId>
-  <artifactId>maven-web-project</artifactId>
+  <groupId>UCC</groupId>
+  <artifactId>UCC-ALM</artifactId>
   <packaging>war</packaging>
   <version>2.3.0</version>
-  <name>Maven Web Project</name>
+  <name>UCC-ALM-Project</name>
   <description>Maven Web Project for Java Project</description>
 
 
