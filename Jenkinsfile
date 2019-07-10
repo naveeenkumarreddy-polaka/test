@@ -1,5 +1,13 @@
-#!groovy
+//groovy
+build()
+sca_sonar()
+unit_test()
+upload_artifact()
+deploy()
+tosca_testing()
+deploy_qa()
 
+/*
 pipeline{
 	agent any
 	stages{
@@ -34,4 +42,4 @@ pipeline{
 			}
 		}
 	}
-}
+}*/
